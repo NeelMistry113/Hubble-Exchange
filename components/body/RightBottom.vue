@@ -59,9 +59,9 @@ import { ethers } from 'ethers'
 
             const provider = new ethers.providers.Web3Provider(window.ethereum);
             const signer = provider.getSigner()
-            const Address = await signer.getAddress();
-            this.Address = Address;
-            console.log(this.Address)
+            // const Address = await signer.getAddress();
+            // this.Address = Address;
+            // console.log(this.Address)
 
             
             this.hubbleViewerContractInstance = new ethers.Contract(
