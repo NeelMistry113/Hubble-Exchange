@@ -25,6 +25,7 @@ import { mapActions } from 'vuex'
 
 <style scoped>
     .walletConnect{
+        font-family: 'Inter', sans-serif;
         font-size: 22px;
         padding: 16px 28px;
         cursor: pointer;

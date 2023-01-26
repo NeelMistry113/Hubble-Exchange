@@ -115,6 +115,7 @@ import WalletConnect from './WalletConnect.vue'
     display: flex;
     /* position: relative; */
     transition: all 1s ease-in-out;
+    font-family: 'Inter', sans-serif;
 }
 
 
