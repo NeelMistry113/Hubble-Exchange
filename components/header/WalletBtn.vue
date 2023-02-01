@@ -210,6 +210,7 @@ margin-right: 8px;
     background: linear-gradient(222.94deg, #32C5FF 0%, #B620E0 45.93%, #FFAA12 86.01%);
     border-radius: 90px;
     cursor: pointer;
+    font-family: "Inter";
 }
 
 .ConnectBtn:hover {
@@ -238,6 +239,7 @@ margin-right: 8px;
     border: 1px solid rgb(75, 71, 71);
     border-radius: 12px;
     background: #23262F;
+    font-family: "Inter";
 }
 #metamask {
     background:transparent;
