@@ -4,10 +4,12 @@
         <div class="data">
             <p>Total collateral</p>
             <p>$1916.54</p>
+            <!-- <p>$ {{ totalCollateral }}</p> -->
         </div>
         <div class="data">
             <p>Free Margin</p>
             <p>$952.73</p>
+            <!-- <p>$ {{ freeMargin }}</p> -->
         </div>
         <div class="data">
             <p>Leverage</p>
@@ -20,14 +22,17 @@
         <div class="data">
             <p>Margin Fraction</p>
             <p>33.82%</p>
+            <!-- <p>{{ marginFraction }}%</p> -->
         </div>
         <div class="data">
             <p>Total Notionla Postion</p>
             <p>$3998.05</p>
+            <!-- <p>$ {{ notionalPosition }}</p> -->
         </div>
         <div class="data">
             <p>Unrelized PNL</p>
             <p>$0</p>
+            <!-- <p>$ {{ unrealizedPnl }}</p> -->
         </div>
     </div>
 </template>
@@ -70,10 +75,20 @@ import { ethers } from 'ethers'
                 HubbleViewerABI.abi,
                 provider
             )
-            console.log(this.hubbleViewerContractInstance)
+            console.log(this.hubbleViewerContractInstance, "Geted Contract")
 
-            // const res = await this.hubbleViewerContractInstance.getAccountInfo(this.Address)
+            // Calling the Function from Smart-Contract... 
+
+            // const res = await this.hubbleViewerContractInstance.getAccountInfo(this.address)
+            // call();
             // console.log(res)
+
+            // Base On the Geted function value, try to change the data value with geted value
+            // this.totalCollateral = res.totalCollateral;
+            // this.freeMargin = res.freeMargin;
+            // this.marginFraction = res.marginFraction;
+            // this.notionalPosition = res.notionalPosition;
+            // this.unrealizedPnl = res.unrealizedPnl;
         }
     }
 </script>
