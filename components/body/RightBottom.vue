@@ -62,8 +62,8 @@ import { ethers } from 'ethers'
 
         async mounted() {
 
-            const provider = new ethers.providers.Web3Provider(window.ethereum);
-            const signer = provider.getSigner()
+            // const provider = new ethers.providers.Web3Provider(window.ethereum);
+            // const signer = provider.getSigner()
             // const Address = await signer.getAddress();
             // this.Address = Address;
             // console.log(this.Address)
@@ -73,7 +73,7 @@ import { ethers } from 'ethers'
                 // "0x51bB52aA9B6B755B293635d8Ef2192Ccf65a9B3e",
                 this.address,
                 HubbleViewerABI.abi,
-                provider
+                // provider
             )
             console.log(this.hubbleViewerContractInstance, "Geted Contract")
 
